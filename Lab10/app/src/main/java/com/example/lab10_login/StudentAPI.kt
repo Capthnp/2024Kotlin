@@ -19,6 +19,8 @@ interface StudentAPI {
         @Path("std_id") std_id: String
     ): Call<ProfileClass> // ✅ ตรวจสอบว่า ProfileClass ถูกต้อง
 
+
+
     @FormUrlEncoded
     @POST("insertAccount")
     fun registerStudent(
@@ -29,7 +31,7 @@ interface StudentAPI {
     ): Call<LoginClass>
 
     companion object {
-        private const val BASE_URL = "http://10.2.2.2:3000/" // ✅ ใช้กับ Emulator
+        private const val BASE_URL = "http://10.0.2.2:3000/" // ✅ ใช้กับ Emulator
 
         fun create(): StudentAPI {
             return Retrofit.Builder()

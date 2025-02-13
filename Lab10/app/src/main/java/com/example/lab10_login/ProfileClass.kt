@@ -11,7 +11,7 @@ data class ProfileClass(
     @SerializedName("std_name") val std_name :String,
 
     @Expose
-    @SerializedName("std_grnder") val std_gender :String,
+    @SerializedName("std_gender") val std_gender :String,
 
     @Expose
     @SerializedName("role") val role :String

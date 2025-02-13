@@ -1,5 +1,6 @@
 
 package com.example.lab10_login
+
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.*
@@ -117,7 +118,9 @@ fun ProfileScreen(navController: NavHostController) {
             }
         )
         Spacer(modifier = Modifier.height(20.dp))
-        TextButton(
+        Button(
+            modifier = Modifier.fillMaxWidth()
+                .height(50.dp),
             onClick = {
                 isDialogVisible = true
             }
